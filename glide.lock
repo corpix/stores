@@ -1,10 +1,12 @@
-hash: 62d9c07b55fa37181a707b400fb91af6fd771798b8f6bd5b654ed62b63a5959b
-updated: 2017-11-23T20:55:43.936695818Z
+hash: 9b26b380c6876530ea43cee18a4e278c9c8edfc853508a6afaf5be977d62b560
+updated: 2017-11-29T03:29:08.665548844Z
 imports:
 - name: github.com/corpix/loggers
   version: 69c4a7d3244f0509086d4080e8898376aeb95e09
   subpackages:
   - logger/prefixwrapper
+- name: github.com/corpix/time
+  version: 9adb218ff5319d3f3e3d5a44fe0cb5d4880762f4
 - name: github.com/fatih/structs
   version: f5faa72e73092639913f5833b75e1ac1d6bc7a63
 testImports:

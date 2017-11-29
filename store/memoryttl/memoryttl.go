@@ -34,7 +34,7 @@ func (s *MemoryTTL) Set(key string, value interface{}) error {
 	defer s.locker.Unlock()
 
 	s.store[key] = value
-	s.timeouted[key] = time.Now().Add(s.Config.TTL)
+	s.timeouted[key] = time.Now().Add(s.Config.TTL.Duration())
 
 	return nil
 }
@@ -147,7 +147,7 @@ func (s *MemoryTTL) cancellationLoop() {
 		select {
 		case <-s.done:
 			return
-		case <-time.After(resolution):
+		case <-time.After(resolution.Duration()):
 			s.locker.Lock()
 			for k, v := range s.timeouted {
 				if time.Now().After(v) {

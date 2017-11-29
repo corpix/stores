@@ -1,7 +1,7 @@
 package memoryttl
 
 import (
-	"time"
+	"github.com/corpix/time"
 )
 
 type Config struct {

@@ -3,8 +3,8 @@ package memoryttl
 import (
 	"sync"
 	"testing"
-	"time"
 
+	"github.com/corpix/time"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/corpix/stores/errors"
